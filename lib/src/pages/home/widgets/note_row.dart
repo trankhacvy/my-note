@@ -40,12 +40,13 @@ class NoteRow extends StatelessWidget {
       },
       child: Semantics(
         customSemanticsActions: <CustomSemanticsAction, VoidCallback>{
-          const CustomSemanticsAction(label: 'Archive'): _handleArchive,
-          const CustomSemanticsAction(label: 'Delete'): _handleDelete,
+          CustomSemanticsAction(String: 'Archive'): _handleArchive,
+          CustomSemanticsAction(String: 'Delete'): _handleDelete,
         },
         child: Dismissible(
           key: Key(note.id.toString()),
-          direction: DismissDirection.startToEnd, // use dismissDirection to swipe both side,
+          direction: DismissDirection
+              .startToEnd, // use dismissDirection to swipe both side,
           onDismissed: (DismissDirection direction) {
             if (direction == DismissDirection.endToStart)
               _handleArchive();
@@ -152,13 +153,13 @@ class NoteRow extends StatelessWidget {
             FlatButton(
               child: const Text('Yes'),
               onPressed: () {
-                Navigator.pop(context, true); // showDialog() returns true
+                Navigator.pop(context, true); 
               },
             ),
             FlatButton(
               child: const Text('No'),
               onPressed: () {
-                Navigator.pop(context, false); // showDialog() returns false
+                Navigator.pop(context, false);
               },
             ),
           ],
