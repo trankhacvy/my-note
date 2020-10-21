@@ -122,6 +122,13 @@ packages:
       url: "https://github.com/MarkOSullivan94/dart_config.git"
     source: git
     version: "0.5.0"
+  dio:
+    dependency: "direct main"
+    description:
+      name: dio
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "3.0.10"
   fake_async:
     dependency: transitive
     description:
@@ -270,6 +277,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.9.7"
+  nested:
+    dependency: transitive
+    description:
+      name: nested
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.0.4"
   node_interop:
     dependency: transitive
     description:
@@ -389,6 +403,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.0.13"
+  provider:
+    dependency: "direct main"
+    description:
+      name: provider
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "4.3.2+2"
   pub_semver:
     dependency: transitive
     description:
@@ -655,4 +676,4 @@ packages:
     version: "2.2.1"
 sdks:
   dart: ">=2.10.0-110 <2.11.0"
-  flutter: ">=1.12.13+hotfix.5 <2.0.0"
+  flutter: ">=1.16.0 <2.0.0"
